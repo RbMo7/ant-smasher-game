@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ant Smasher Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./antLogic.js" defer></script>
+</head>
+<body>
+    <main class="ant-smasher">
+        <header class="ant-smasher__header">
+            <h1 class="ant-smasher__title">Ant Smasher</h1>
+        </header>
+
+        <section class="ant-smasher__controls">
+            <div class="ant-smasher__stat">Score: <span id="score-value">0</span></div>
+            <div class="ant-smasher__stat">Time: <span id="time-value">30</span></div>
+            <div class="ant-smasher__stat">High Score: <span id="highscore-value">0</span></div>
+            <button class="ant-smasher__start-button" id="start-button">Start Game</button>
+        </section>
+
+        <section class="ant-smasher__screen" id="game-screen"></section>
+        
+        <div class="ant-smasher__end-modal" id="end-modal">
+            <div class="ant-smasher__final-score">Time's Up!</div>
+            <div class="ant-smasher__final-score">Final Score: <span id="final-score">0</span></div>
+            <button class="ant-smasher__start-button" id="play-again-button">Play Again</button>
+        </div>
+    </main>
+</body>
+</html>
